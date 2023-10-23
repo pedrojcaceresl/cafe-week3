@@ -31,7 +31,7 @@ function calc() {
     let sum = subtotal();
     let shippingFee = calcPostageForPurchase(sum);
 
-    window.alert(`El coste de envío es de: ${shippingFee} yenes. El total es de: ${sum + shippingFee} yenes`);
+    window.alert(`${display()}\nEl subtotal es: ${sum}\nEl coste de envío es de: ${shippingFee} yenes.\nEl total es de: ${sum + shippingFee} yenes`);
 
     purchases = [];
     priceElement.value = '';
